@@ -1,0 +1,26 @@
+Changelog:
+----------
+
+[*] - Important.
+
+Version 2.3:
+-----------
+1. Widget title icons fix. (All html files with widget)
+
+Version 2.2:
+-----------
+1. Sidebar navigation in Tablets fix.
+
+Version 2.0:
+-----------
+1. Added New Widget (widgets.css). [*]
+2. Add new pages (style.css). [*]
+3. Added prettyPhoto lightbox. Included Plugin file in all HTML files. [*]
+4. jQuery Wizard Plugin added in all HTML files to create Wizards. [*]
+4. Sidebar dropdown menu fix. (custom.js) [*]
+3. Progress bar design updated (style.css).
+4. Widget design updated (style.css).
+
+Version 1.0:
+-----------
+Initial Release.

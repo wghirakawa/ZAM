@@ -1,12 +1,10 @@
-<p>This is the partial for view 1.</p>
-<table><tr ng-repeat="result in results"><td>{{result.name}}</td></tr></table>
-<p>{{test2}}</p>
 <!-- Main bar -->
+    <script src="js/sparklines.js"></script> <!-- Sparklines -->
     <div class="mainbar">
       
         <!-- Page heading -->
         <div class="page-head">
-          <h2 class="pull-left"><i class="icon-home"></i> Dashboard</h2>
+          <h2 class="pull-left"><i class="icon-home"></i>{{test2}}</h2>
 
         <!-- Breadcrumb -->
         <div class="bread-crumb pull-right">
@@ -35,11 +33,11 @@
               <!-- List starts -->
               <ul class="today-datas">
                 <!-- List #1 -->
-                <li>
+                <li ng-repeat="result in results">
                   <!-- Graph -->
                   <div><span id="todayspark1" class="spark"></span></div>
                   <!-- Text -->
-                  <div class="datas-text">12,000 visitors/day</div>
+                  <div class="datas-text">{{result.name}}</div>
                 </li>
                 <li>
                   <div><span id="todayspark2" class="spark"></span></div>

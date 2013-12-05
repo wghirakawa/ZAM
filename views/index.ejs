@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title><%= title %></title>
   <link rel="stylesheet" href="stylesheets/app.css"/>
-  
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <!-- Title and other stuffs -->
@@ -50,13 +49,12 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon/favicon.png">
 </head>
-<body>
-    <div ng-controller = "AppCtrl">
+<body ng-controller = "AppCtrl">
   <ul class="menu">
     <li><a href="#/view1">view1</a></li>
     <li><a href="#/view2">view2</a></li>
   </ul>
-
+ 
   <div>Angular seed app: v<span app-version></span></div>
   
   <div class="navbar navbar-fixed-top">
@@ -157,7 +155,6 @@
     </div>
   </div>
 </div>
-
 <!-- Header starts -->
   <header>
     <div class="container-fluid">
@@ -340,11 +337,8 @@
       </div>
     </div>
   </header>
-
 <!-- Header ends -->
-
 <!-- Main content starts -->
-
 <div class="content">
 
   	<!-- Sidebar -->
@@ -397,15 +391,12 @@
           <li><a href="ui.html"><i class="icon-magic"></i> User Interface</a></li>
       	</ul>
   	</div>
-
-  	<!-- Sidebar ends -->
-
-   <div ng-view></div>	    	
+ <div ng-view></div> 
+  	<!-- Sidebar ends -->  	
    <div class="clearfix"></div>
 
 </div>
 <!-- Content ends -->
-
 <!-- Footer starts -->
 <footer>
   <div class="container-fluid">
@@ -417,9 +408,7 @@
     </div>
   </div>
 </footer> 	
-
 <!-- Footer ends -->
-
 <!-- Scroll to top -->
 <span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span> 
 
@@ -454,8 +443,17 @@
 <script src="js/filter.js"></script> <!-- Filter for support page -->
 <script src="js/custom.js"></script> <!-- Custom codes -->
 <script src="js/charts.js"></script> <!-- Custom codes -->
-
-<!-- Script for this page -->
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="javascripts/app.js"></script>
+  <script src="javascripts/services.js"></script>
+  <script src="javascripts/controllers.js"></script>
+  <script src="javascripts/filters.js"></script>
+  <script src="javascripts/directives.js"></script>
+  
+  <!-- Script for this page -->
 <script type="text/javascript">
 $(function () {
 
@@ -583,17 +581,5 @@ $(function () {
 /* Curve chart ends */
 </script>
 
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="javascripts/app.js"></script>
-  <script src="javascripts/services.js"></script>
-  <script src="javascripts/controllers.js"></script>
-  <script src="javascripts/filters.js"></script>
-  <script src="javascripts/directives.js"></script>
-  
-</div><!-- Main NgApp Controller Div-->
 </body>
 </html>
